@@ -38,3 +38,7 @@ $(function() {
 $(function() {
   Animate("#marquee2");
 });
+
+$(function() {
+  Animate("#marquee3");
+});
