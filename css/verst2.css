@@ -1,0 +1,538 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust:     100%;
+}
+
+body {
+  width:1077px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+/*text*/
+h1 {
+  font-family: 'Roboto Condensed';
+  font-size: 36px;
+
+}
+
+h2 {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Roboto Condensed';
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+hgroup h4 {
+  text-align: center;
+}
+
+h4 {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+
+}
+
+.quote {
+  font-style: italic;
+}
+
+/*grids*/
+
+/*menu*/
+.headmenu {
+  width: 100%;
+  height: 55px;
+  border-bottom:1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.headmenu .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-right: 1px solid black; 
+    text-align: center;
+    align-self: center;
+    height: 55px;  
+}
+
+.headmenu .menu {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.headmenu .menu ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  height: 55px;  
+}
+
+.headmenu .menu ul li {
+  display: flex;
+  text-align: center;
+  border-right: 1px solid black;
+  align-self: center;
+  list-style: none;
+  height: 55px;  
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.headmenu .menu ul li:last-child {
+  border: none;
+}
+
+/*обложка короче хз как по англицки*/
+.top {
+  display: grid;
+  grid-template-columns: 55px 1fr 55px;
+  grid-template-rows: 433px 55px;
+  grid-template-areas:
+  "leftside-bar" "center-bar" "rightside-bar";
+  border-bottom: 1px solid black;
+}
+
+.leftside-bar {
+  align-self: center;
+}
+
+.center-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "journal" "price";
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+
+}
+
+.journal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price img {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.rightside-bar {
+  align-self: center;
+}
+
+
+/*shop*/
+
+.shop {
+
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+  "block1" "block2" "block3" "block4";
+}
+
+.block1 {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.plus {
+  position: absolute;
+  top: 0px;
+  right:0px;
+  cursor: pointer;
+}
+
+.picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.picture img {
+
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "name" "cost";
+}
+
+.name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+
+}
+
+ h5 {
+  margin: 15px 0px;
+}
+
+.cost {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+
+}
+
+.cost h3 {
+  margin: 15px 0px;
+}
+
+.block2 {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.block3 {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.block4 {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "square1" "square2";
+}
+
+.square1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+  "window1" "window2" 
+  "window3" "window4";
+}
+
+.square1  {
+  border: 1px;
+}
+
+.square2  {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "picture1" "data1";
+  border-bottom: 1px solid black;
+
+}
+
+.picture1 {
+  position: relative;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+
+}
+
+.data1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px;
+}
+
+
+.window1{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.window2{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.window3{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+.window4{
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+  "picture" "data" ;
+  border-right: 1px solid black;
+}
+
+
+.row3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "square1" "square2";
+}
+
+.row3 .square2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "square1" "square2";
+  border-right: 1px solid black;
+}
+
+.row3 .picture1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row3 .data1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row3 .window2 {
+  border-right: none;
+}
+
+.row3 .window4 {
+  border-right: none;
+}
+
+.space {
+  height: 55px;
+}
+
+.row {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/*offer*/
+
+.offer {
+  background-image: url('../img/storage.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 273px;
+  margin: 55px;
+ 
+}
+
+.offer img {
+  width: 100%;
+}
+
+.offer h4 {
+  margin: 25px 0;
+}
+/*letter*/
+
+.letter {
+  text-align: center;
+}
+
+
+.empty {
+  height: 55px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+}
+
+.mailing {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-areas:
+  "email" "sign";
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid black;
+}
+
+.sign {
+  background-color: black;
+  color: white;
+
+}
+
+
+/*footer*/
+
+.info {
+  height: 55px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+  "address" "feedback" "phone" "smth";
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid black;
+}
+
+.smth {
+  border-right: 1px solid black;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  height: 55px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  height: 55px;
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  
+}
+
+.finish {
+  color: white;
+  background-color: black;
+  height: 55px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas:
+  "name" "logo" "smm";
+  grid-template-rows: 1fr;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
