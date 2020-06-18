@@ -131,7 +131,7 @@ h5 {
 }
 
 .center-bar {
-  background-image: url(../img/history.png);
+  background-image: url(../img/cryoback.png);
   background-size: cover;
   align-content: center;
   display: flex;
@@ -152,6 +152,18 @@ h5 {
   align-self: center;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color:grey;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:black;
+}
 
 /*line*/
 

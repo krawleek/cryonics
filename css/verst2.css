@@ -119,9 +119,17 @@ h5 {
   border: none;
 }
 
-.a :hover {
-  color: darkgray;
+a {
+  color: black;
+}
 
+a:hover {
+  color:grey;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:black;
 }
 
 /*обложка короче хз как по англицки*/
