@@ -77,6 +77,18 @@ h5 {
   grid-template-columns: 1fr 1fr;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color:grey;
+}
+
+a:visited {
+  color:black;
+}
+
 .headmenu .title {
     display: flex;
     align-items: center;

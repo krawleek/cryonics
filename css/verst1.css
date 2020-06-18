@@ -207,6 +207,8 @@ margin-top: 55px;
 
 .history-text .quote {
   margin: 20px 0;
+  padding: 0px 0px 0px 30px;
+  border-left: 1px solid black;
 }
 
 .history-text .words {
@@ -216,7 +218,7 @@ margin-top: 55px;
 /* блок контактов*/
 
 .blocknews {
-  grid-area: blocknews;
+  grid-area: "blocknews";
   padding: 0px 25px;
   }
 
@@ -224,15 +226,15 @@ margin-top: 55px;
 grid-area: news3;
 }
 
-contacts h4 {
-  margin: 20px;
+.contacts h4 {
+  margin: 0px;
 }
 
 .contacts {
   display: grid;
   grid-template-areas:
   "highlight" "stroke1" "stroke2" "stroke3" "stroke4";
-  border: 1px solid black;
+
 }
 
 .highlight{
@@ -240,7 +242,8 @@ contacts h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
+
 }
 
 .stroke1 {
@@ -249,6 +252,8 @@ contacts h4 {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .stroke2 {
@@ -257,6 +262,8 @@ contacts h4 {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .stroke3 {
@@ -265,7 +272,13 @@ contacts h4 {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 } 
+
+.stroke4 {
+  border:none;
+}
 
 /*программы центра*/
 
