@@ -96,6 +96,10 @@ a:active {
   text-decoration: underline;
 }
 
+.headmenu .menu ul li {
+  color:black;
+}
+
 .headmenu .menu ul li:hover {
   color: white;
   text-decoration: underline;
